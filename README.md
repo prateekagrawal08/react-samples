@@ -1,3 +1,33 @@
+# Sample 1 
+Find longest String from an array. 
+
+Entered Input : SAMPLEOUTPUT
+
+S
+
+AMP
+
+L
+
+EOU
+
+T
+
+PU
+
+T
+
+Longest String : EOU
+
+File Reference : utiity.js
+
+#Sample 2 
+Closure with Memoization
+
+utility.js
+closureExample
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
