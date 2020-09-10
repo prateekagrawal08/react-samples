@@ -1,4 +1,4 @@
-# Sample 1 
+## Sample 1 
 Find longest String from an array. 
 
 Entered Input : SAMPLEOUTPUT
@@ -21,7 +21,7 @@ Longest String : EOU
 
 File Reference : utiity.js
 
-#Sample 2 
+## Sample 2 
 Closure with Memoization
 
 utility.js
