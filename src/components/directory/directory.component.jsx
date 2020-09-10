@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from 'react';
-import {getSubStr, getLongestItemInArray} from "../../utilites/utility";
+import {getSubStr, getLongestItemInArray, closureExample,} from "../../utilites/utility";
 
 const Directory = ()=> {
 
     const [subStr, setSubStr] = useState('');
     const [subStrOutput, setSubStrOutput] = useState([]);
+    const [incremeter, setIncrementer] = useState(0);
+    const protectedClosure = closureExample();
 
     useEffect(()=>{
          setSubStrOutput(getSubStr(subStr));
@@ -22,6 +24,10 @@ const Directory = ()=> {
         setSubStr(event.target.value);
     }
 
+    const callIncrementer = ()=> {
+        protectedClosure(2);
+    }
+
     const longestString = subStrOutput.length > 0 && subStrOutput.reduce(function(a, b){
         return a.length > b.length ? a : b
     })
@@ -34,6 +40,11 @@ const Directory = ()=> {
             return(<p> {str}</p>)
         })}
         <label>Longest String : </label> {getLongestItemInArray(subStrOutput)}
+        <br/><br/>
+        <label>{incremeter}</label>
+        <br/><br/>
+        <button onClick={callIncrementer}>Increment Me - Click</button>
+
     </div>);
 }
 

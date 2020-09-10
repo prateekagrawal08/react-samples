@@ -32,3 +32,19 @@ export const getLongestItemInArray = (subStrOutput)=> {
         return a.length > b.length ? a : b
     })
 }
+
+
+export const closureExample = ()=> {
+    let cache = {};
+    return number => {
+        if(cache[number]){
+            console.log('Take from Cache');
+            return cache[number];
+        }
+        const addedNumber = number * 5;
+        console.log('First Time Execution');
+        cache[number] = addedNumber;
+        return addedNumber;
+    }
+}
+
