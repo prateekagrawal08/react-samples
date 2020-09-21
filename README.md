@@ -27,6 +27,11 @@ Closure with Memoization
 utility.js
 closureExample
 
+##Sample 3
+Custom Hooks 
+
+## Sample 4 
+Callback way
 
 ## Available Scripts
 
