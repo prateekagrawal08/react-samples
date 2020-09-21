@@ -33,6 +33,9 @@ Custom Hooks
 ## Sample 4 
 Callback way
 
+## Sample 5 
+useReducer Hook
+
 ## Available Scripts
 
 In the project directory, you can run:

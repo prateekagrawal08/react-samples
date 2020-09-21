@@ -1,7 +1,7 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import {closureExample, getLongestItemInArray, getSubStr,} from "../../utilites/utility";
 import axios from 'axios';
-import {fetchDataFromApi} from "../../utilites/hooks/customhooks";
+import {useDataApi} from "../../utilites/hooks/customhooks";
 
 const Directory = ()=> {
 
@@ -12,7 +12,7 @@ const Directory = ()=> {
     const [query, setQuery] = useState('redux');
 
     // Custom Hooks Example
-    const [{ data, isLoading, isError }, doFetch] = fetchDataFromApi(
+    const [{ data, isLoading, isError }, doFetch] = useDataApi(
         'https://hn.algolia.com/api/v1/search?query=redux',
         { hits: [] },
     );
