@@ -4,7 +4,7 @@ import './App.css';
 import {Switch, Route} from 'react-router-dom';
 import HomePage from "./pages/homepage/homepage.component";
 import {Header} from "./components/header/header.component";
-import NestedMainPage from "./pages/propdrillingalternative/nestedccontext.component";
+import NestedMainPage from "./pages/nestedcomponents/deepnested.component";
 function App() {
   return (
     <div className="App">
