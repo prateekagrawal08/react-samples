@@ -36,6 +36,10 @@ Callback way
 ## Sample 5 
 useReducer Hook
 
+## Sample 6
+useContext Hook
+Notifying two deep nested components using Context API
+
 ## Available Scripts
 
 In the project directory, you can run:
