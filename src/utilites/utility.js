@@ -4,6 +4,7 @@ export const getSubStr = (inputValue) => {
     let splitString = '';
     const asciiValArray = [];
     const arraySubStrings = [];
+    
     valArray.map((value, index)=> {
         asciiValArray.push(value.charCodeAt(0));
     })
