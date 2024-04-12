@@ -2,12 +2,12 @@
 export const getSubStr = (inputValue) => {
     const valArray = inputValue.split('');
     let splitString = '';
-    const asciiValArray = [];
+    const asciibbValArray = [];
     const arraySubStrings = [];
     valArray.map((value, index)=> {
-        asciiValArray.push(value.charCodeAt(0));
+        asciibbValArray.push(value.charCodeAt(0));
     })
-    asciiValArray.map((value, index) => {
+    asciibbValArray.map((value, index) => {
         const lastItemValue = valArray[index - 1];
         const getAsciiLast = lastItemValue ? lastItemValue.charCodeAt(0) : 0;
         if (index === 0) {
