@@ -5,7 +5,11 @@ import {Switch, Route} from 'react-router-dom';
 import HomePage from "./pages/homepage/homepage.component";
 import {Header} from "./components/header/header.component";
 import NestedMainPage from "./pages/nestedcomponents/deepnested.component";
+import { closureSample } from './utilites/utility';
 function App() {
+  console.log('closureSample',closureSample()(20));
+  console.log('closureSample',closureSample().cache);
+
   return (
     <div className="App">
       <Header></Header>
